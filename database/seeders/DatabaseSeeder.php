@@ -21,10 +21,11 @@ class DatabaseSeeder extends Seeder
 
         Storage::makeDirectory('categories');
         Storage::makeDirectory('subcategories');
-        
+
         $this->call(UserSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(SubcategorySeeder::class);
+        $this->call(ProductSeeder::class);
 
     }
 }
