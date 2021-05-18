@@ -23,12 +23,12 @@ class Product extends Model
     //Relación uno a muchos inversa
     public function brand()
     {
-        $this->belongsTo(Brand::class);
+        return $this->belongsTo(Brand::class);
     }
 
     public function subcategory()
     {
-        $this->belongsTo(Subcategory::class);
+        return $this->belongsTo(Subcategory::class);
     }
 
     //Relación muchos a muchos
