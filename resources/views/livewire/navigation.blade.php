@@ -9,9 +9,11 @@
 
 </style>
 
-<header class="bg-trueGray-700 sticky top-0">
+<header class="bg-trueGray-700 sticky top-0" x-data="{ open: false }">
     <div class="container flex items-center h-16">
-        <a class="flex flex-col items-center justify-center px-4 bg-white bg-opacity-25 text-white cursor-pointer font-semibold h-full"
+        <a
+        x-on:click="open = !open"
+        class="flex flex-col items-center justify-center px-4 bg-white bg-opacity-25 text-white cursor-pointer font-semibold h-full"
             href="">
             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -116,7 +118,9 @@
 
     </div>
 
-    <nav id="navigation-menu" class="bg-trueGray-700 bg-opacity-25 w-full absolute">
+    <nav id="navigation-menu"
+     x-show="open"
+     class="bg-trueGray-700 bg-opacity-25 w-full absolute">
 
         <div class="container h-full">
 
