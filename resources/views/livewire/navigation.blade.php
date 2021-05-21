@@ -15,7 +15,7 @@
 
         @livewire('search')
 
-        <div class="ml-3 relative">
+        <div class="mx-6 relative">
             @auth
                 <x-jet-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -73,6 +73,8 @@
 
             @endauth
         </div>
+
+        @livewire('dropdown-cart')
 
     </div>
 </header>
