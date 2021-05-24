@@ -39,12 +39,11 @@
         <script>
             function dropdown(){
                 return {
-                    open:true,
+                    open:false,
                     show(){
                         if(this.open){
                             //Se cierra el menu
-                            this.open = false;
-                            document.getElementsByTagName('html')[0].style.overflow = 'auto'
+                            this.close()
                         }else{
                             //Se abre el menu
                             this.open = true;
