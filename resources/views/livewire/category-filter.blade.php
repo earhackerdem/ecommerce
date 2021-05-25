@@ -11,7 +11,7 @@
 
     <div class="grid grid-cols-5 gap-6">
         <aside>
-            <h2 class="font-semibold text-center mb-2">Subcategories</h2>
+            <h2 class="font-semibold text-center mb-2">Subcategorías</h2>
             <ul class="divide-y divide-gray-200">
                 @foreach ($category->subcategories as $subcategory)
                     <li class="py-2 text-sm">
