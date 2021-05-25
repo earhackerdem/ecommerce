@@ -30,4 +30,11 @@ class Category extends Model
     {
         return $this->hasManyThrough(Product::class,Subcategory::class);
     }
+
+    //URLs AMIGABLES
+
+    public function getRouteKeyName()
+    {
+        return "slug";
+    }
 }
