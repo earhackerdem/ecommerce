@@ -2,11 +2,19 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Product;
 use Livewire\Component;
 
 class AddCartItem extends Component
 {
+    public $product,$quantity;
+
     public $qty = 1;
+
+    public function mount(Product $product)
+    {
+        $this->quantity = $this->product->quantity;
+    }
 
     public function decrement()
     {
