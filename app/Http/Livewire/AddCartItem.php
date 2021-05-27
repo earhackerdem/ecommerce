@@ -14,7 +14,10 @@ class AddCartItem extends Component
 
     public $qty = 1;
 
-    public $options = [];
+    public $options = [
+        'color_id' => null,
+        'size_i' => null
+    ];
 
     public function mount(Product $product)
     {
